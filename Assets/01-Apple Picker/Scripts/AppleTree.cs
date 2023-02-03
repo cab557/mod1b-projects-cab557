@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AppleTree : MonoBehaviour
 {
-    public GameObject applePrefab;
+    public GameObject ApplePrefab;
 
     public float speed = 1f;
 
@@ -18,9 +18,14 @@ public class AppleTree : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {     
-        
+          Invoke( "DropApple", 2f ); 
     }
+    void DropApple() {                         
+        var Apple = Instantiate(ApplePrefab);
+        Apple.transform.position = transform.position;
+        Invoke( "DropApple", secondsBetweenAppleDrops);
 
+    }
     // Update is called once per frame
     void Update()
     {
