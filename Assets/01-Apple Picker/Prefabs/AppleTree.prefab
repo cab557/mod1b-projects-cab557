@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1271920551634095087}
-  - component: {fileID: 1271920551634095080}
-  m_Layer: 0
+  - component: {fileID: 366951853}
+  m_Layer: 8
   m_Name: AppleTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,22 +34,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1271920551634095080
-Rigidbody:
+--- !u!114 &366951853
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271920551634095081}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2283f855a64efd43a2e9aeb5e69b3f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ApplePrefab: {fileID: 6990433722791655239, guid: 02c2537b98b98d54ebb03e390c26f6bf, type: 3}
+  speed: 10
+  leftAndRightEdge: 20
+  chanceToChangeDirections: 0.03
+  secondsBetweenAppleDrops: 2
 --- !u!1 &1271920551780076822
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,7 +63,7 @@ GameObject:
   - component: {fileID: 1271920551780076826}
   - component: {fileID: 1271920551780076827}
   - component: {fileID: 1271920551780076820}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +113,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b169504957d4c204a9af0803975c4b9b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -160,7 +161,7 @@ GameObject:
   - component: {fileID: 1271920552228954322}
   - component: {fileID: 1271920552228954323}
   - component: {fileID: 1271920552228954316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Leaves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +211,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 64d895648068f1748893a32377340a2b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
