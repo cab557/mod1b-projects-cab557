@@ -140,6 +140,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2283f855a64efd43a2e9aeb5e69b3f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ApplePrefab: {fileID: 6990433722791655239, guid: 02c2537b98b98d54ebb03e390c26f6bf, type: 3}
+  speed: 10
+  leftAndRightEdge: 20
+  chanceToChangeDirections: 0.02
+  secondsBetweenAppleDrops: 2
 --- !u!1 &792234105
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +181,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.53733534, g: 0.7075472, b: 0.69904506, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -325,6 +330,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1271920551634095080, guid: d0ad5c0d43f3d494781513a6ea420b6f, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271920551634095080, guid: d0ad5c0d43f3d494781513a6ea420b6f, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1271920551634095081, guid: d0ad5c0d43f3d494781513a6ea420b6f, type: 3}
       propertyPath: m_Name
       value: AppleTree
@@ -381,5 +394,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 64d895648068f1748893a32377340a2b, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1271920551634095080, guid: d0ad5c0d43f3d494781513a6ea420b6f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d0ad5c0d43f3d494781513a6ea420b6f, type: 3}
