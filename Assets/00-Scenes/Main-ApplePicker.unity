@@ -342,6 +342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AppleTree
       objectReference: {fileID: 0}
+    - target: {fileID: 1271920551634095081, guid: d0ad5c0d43f3d494781513a6ea420b6f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1271920551634095087, guid: d0ad5c0d43f3d494781513a6ea420b6f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -386,10 +390,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1271920551780076822, guid: d0ad5c0d43f3d494781513a6ea420b6f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1271920551780076827, guid: d0ad5c0d43f3d494781513a6ea420b6f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b169504957d4c204a9af0803975c4b9b, type: 2}
+    - target: {fileID: 1271920552228954318, guid: d0ad5c0d43f3d494781513a6ea420b6f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1271920552228954323, guid: d0ad5c0d43f3d494781513a6ea420b6f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
