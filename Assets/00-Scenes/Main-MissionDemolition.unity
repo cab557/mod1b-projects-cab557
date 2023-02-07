@@ -213,8 +213,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223826636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -10, z: 0}
-  m_LocalScale: {x: 100, y: 1, z: 4}
+  m_LocalPosition: {x: 100, y: -10, z: 0}
+  m_LocalScale: {x: 400, y: 1, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -400,6 +400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97f7377e66b7af246baad10ecc5fcf30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  easing: 0.05
+  minXY: {x: 0, y: 0}
   camZ: 0
 --- !u!1 &948799341
 GameObject:
@@ -785,6 +787,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 439358198822299186, guid: 9f6f328b3ca5dce439e79d2319676924, type: 3}
+      propertyPath: m_Constraints
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 3651292263482486842, guid: 9f6f328b3ca5dce439e79d2319676924, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -832,6 +838,14 @@ PrefabInstance:
     - target: {fileID: 6730343150982899415, guid: 9f6f328b3ca5dce439e79d2319676924, type: 3}
       propertyPath: m_Name
       value: Projectile
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153023096140074660, guid: 9f6f328b3ca5dce439e79d2319676924, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: b038b98d2bb740d45ae05d565dd563cb, type: 2}
+    - target: {fileID: 7153023096140074660, guid: 9f6f328b3ca5dce439e79d2319676924, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f6f328b3ca5dce439e79d2319676924, type: 3}
