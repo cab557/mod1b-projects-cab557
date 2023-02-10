@@ -910,13 +910,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3521499602785951050, guid: e55ef001acff6d0459f7e64055d174cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6967c9d994349da4e9bd04cb78ee5ad9, type: 2}
+    - target: {fileID: 5029951533289196191, guid: e55ef001acff6d0459f7e64055d174cf, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6001161206226696496, guid: e55ef001acff6d0459f7e64055d174cf, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6001161206226696496, guid: e55ef001acff6d0459f7e64055d174cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6001161206226696496, guid: e55ef001acff6d0459f7e64055d174cf, type: 3}
       propertyPath: m_LocalPosition.y

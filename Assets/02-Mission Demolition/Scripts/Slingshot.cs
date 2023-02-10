@@ -13,7 +13,7 @@ public class Slingshot : MonoBehaviour
     public GameObject launchPoint;
     public Vector3 launchPos;
     public GameObject projectile;
-    public bool aimingMode;
+    public bool aimingMode = false;
     void Awake() {
 
         Transform launchPointTrans = transform.Find("LaunchPoint");
@@ -50,7 +50,7 @@ public class Slingshot : MonoBehaviour
 
         Vector3 mouseDelta = mousePos3D -launchPos;
 
-        float maxMagnitude = this.GetComponent<SphereCollider>() .radius; //d
+        float maxMagnitude = this.GetComponent<SphereCollider>().radius; //d
 
         if (mouseDelta.magnitude > maxMagnitude) {
             mouseDelta.Normalize();
