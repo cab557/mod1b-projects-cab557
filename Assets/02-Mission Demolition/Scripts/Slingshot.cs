@@ -67,8 +67,8 @@ public class Slingshot : MonoBehaviour
              projRB.collisionDetectionMode = CollisionDetectionMode.Continuous;
              projRB.velocity = -mouseDelta * velocityMult;
 
-            FollowCam.SWITCH_VIEW(FollowCam.eView.slingshot);
-            FollowCam.POI = projectile;
+            FollowCam.SWITCH_VIEW( FollowCam.eView.slingshot );
+             FollowCam.POI = projectile;
              projectile = null;
              MissionDemolition.SHOT_FIRED();
         }
