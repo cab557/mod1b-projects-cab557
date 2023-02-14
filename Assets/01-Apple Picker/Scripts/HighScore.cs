@@ -25,9 +25,9 @@ public class HighScore : MonoBehaviour {
          get { return _SCORE; }
          private set {                                                         // f
              _SCORE = value;
-             PlayerPrefs.SetInt("High Score", value);
+             PlayerPrefs.SetInt("HighScore", value);
             if ( _UI_TEXT != null ) {                                         // g
-                 _UI_TEXT.text = "High Score: " + value.ToString( "#,0" );
+                 _UI_TEXT.text = "HighScore: " + value.ToString( "#,0" );
             }
         }
      }
