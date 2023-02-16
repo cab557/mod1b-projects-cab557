@@ -22,4 +22,6 @@ public class MovePlayer : MonoBehaviour
 
         rb.AddForce(movement * speed);
     }
+   
+    }
 }
