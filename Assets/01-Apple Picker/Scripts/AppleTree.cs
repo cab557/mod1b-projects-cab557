@@ -15,6 +15,8 @@ namespace Balls
 
         public float leftAndRightEdge = 10f;
 
+        public float northAndSouthEdge = 10f;
+
         public float chanceToChangeDirections;
 
         public float secondsBetweenBallsDrops;
@@ -25,7 +27,7 @@ namespace Balls
         // Start is called before the first frame update
         void Start()
         {
-            Invoke("DropBalls", 3f);
+            Invoke("DropBalls", 2f);
         }
         void DropBalls()
         {
@@ -53,10 +55,16 @@ namespace Balls
             // Basic Movement
             Vector3 pos = transform.position;
 
-            pos.x += speed * Time.deltaTime;
+           // pos.x += speed * Time.deltaTime;
+
+          //  transform.position = pos;
+
+
+            
+
+            pos.z += speed * Time.deltaTime;
 
             transform.position = pos;
-
             //Changing Direction
             if (pos.x < -leftAndRightEdge)
             {
@@ -64,6 +72,18 @@ namespace Balls
                 speed = Mathf.Abs(speed); // Move ri
             }
             else if (pos.x > leftAndRightEdge)
+            {
+
+                speed = -Mathf.Abs(speed); // Move l
+
+            }
+            
+            if (pos.z < -northAndSouthEdge)
+            {
+
+                speed = Mathf.Abs(speed); // Move ri
+            }
+            else if (pos.z > northAndSouthEdge)
             {
 
                 speed = -Mathf.Abs(speed); // Move l
