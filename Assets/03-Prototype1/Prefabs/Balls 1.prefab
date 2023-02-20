@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6990433722791655238}
   - component: {fileID: -8353698694790481940}
   m_Layer: 9
-  m_Name: Balls
+  m_Name: Balls 1
   m_TagString: Apple
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
