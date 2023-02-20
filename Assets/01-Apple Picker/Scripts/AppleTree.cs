@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace Balls; 
 public class AppleTree : MonoBehaviour
 {
-    public GameObject ApplePrefab;
+    public GameObject BallsPrefab;
 
     public float speed = 1f;
 
@@ -12,18 +13,18 @@ public class AppleTree : MonoBehaviour
 
     public float chanceToChangeDirections;
     
-    public float secondsBetweenAppleDrops;
+    public float secondsBetweenBallsDrops;
 
    
     // Start is called before the first frame update
     void Start()
     {     
-          Invoke( "DropApple", 2f ); 
+          Invoke( "DropBalls", 2f ); 
     }
-    void DropApple() {                         
-        var Apple = Instantiate(ApplePrefab);
-        Apple.transform.position = transform.position;
-        Invoke( "DropApple", secondsBetweenAppleDrops);
+    void DropBalls() {                         
+        var Balls = Instantiate(BallsPrefab);
+        Balls.transform.position = transform.position;
+        Invoke( "DropBalls", secondsBetweenBallsDrops);
 
     }
     // Update is called once per frame

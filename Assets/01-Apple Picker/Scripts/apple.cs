@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace Balls;
+
+    
+
 public class apple : MonoBehaviour
 {
     public static float     bottomY = -20f; 
