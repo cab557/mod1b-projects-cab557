@@ -48,19 +48,19 @@ namespace Balls
             Invoke("DropBalls", secondsBetweenYellowBallsDrops);
 
         }
-       
+
         // Update is called once per frame
         void Update()
         {
             // Basic Movement
             Vector3 pos = transform.position;
 
-           // pos.x += speed * Time.deltaTime;
+            pos.x += speed * Time.deltaTime;
 
-          //  transform.position = pos;
+            transform.position = pos;
 
 
-            
+
 
             pos.z += speed * Time.deltaTime;
 
@@ -77,25 +77,28 @@ namespace Balls
                 speed = -Mathf.Abs(speed); // Move l
 
             }
-            
-            if (pos.z < -northAndSouthEdge)
+
+            if (pos.z == pos.x)
             {
+                if (pos.z < -northAndSouthEdge)
+                {
 
-                speed = Mathf.Abs(speed); // Move ri
+                    speed = Mathf.Abs(speed); // Move up
+                }
+                else if (pos.z > northAndSouthEdge)
+                {
+
+                    speed = -Mathf.Abs(speed); // Move down
+
+                }
             }
-            else if (pos.z > northAndSouthEdge)
+            void FixedUpdate()
             {
-
-                speed = -Mathf.Abs(speed); // Move l
+                // Changing Direction Randomly is now t
+                if (Random.value < chanceToChangeDirections)
+                    speed *= -1; // Change direction
 
             }
-        }
-        void FixedUpdate()
-        {
-            // Changing Direction Randomly is now t
-            if (Random.value < chanceToChangeDirections)
-                speed *= -1; // Change direction
-
         }
     }
 }

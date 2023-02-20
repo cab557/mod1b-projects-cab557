@@ -700,24 +700,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4515674267250312658, guid: e0ddc2b1bfe99894ab03b896ee7612ff, type: 3}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
+      propertyPath: northAndSouthEdge
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: chanceToChangeDirections
       value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: secondsBetweenBallsDrops
-      value: 3
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: secondsBetweenBlueBallsDrops
-      value: 4
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: secondsBetweenGreenBallsDrops
-      value: 6
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: secondsBetweenYellowBallsDrops
-      value: 5
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1271920551634095081, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: m_Name
