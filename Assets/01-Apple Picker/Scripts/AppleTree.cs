@@ -7,6 +7,9 @@ namespace Balls
     public class AppleTree : MonoBehaviour
     {
         public GameObject BallsPrefab;
+        public GameObject GreenBallsPrefab;
+        public GameObject BlueBallsPrefab;
+        public GameObject YellowBallsPrefab;
 
         public float speed = 1f;
 
@@ -15,12 +18,14 @@ namespace Balls
         public float chanceToChangeDirections;
 
         public float secondsBetweenBallsDrops;
+        public float secondsBetweenBlueBallsDrops;
+        public float secondsBetweenYellowBallsDrops;
 
-
+        public float secondsBetweenGreenBallsDrops;
         // Start is called before the first frame update
         void Start()
         {
-            Invoke("DropBalls", 2f);
+            Invoke("DropBalls", 3f);
         }
         void DropBalls()
         {
@@ -28,7 +33,20 @@ namespace Balls
             Balls.transform.position = transform.position;
             Invoke("DropBalls", secondsBetweenBallsDrops);
 
+            var BlueBalls = Instantiate(BlueBallsPrefab);
+            BlueBalls.transform.position = transform.position;
+            Invoke("DropBalls", secondsBetweenBlueBallsDrops);
+
+            var GreenBalls = Instantiate(GreenBallsPrefab);
+            GreenBalls.transform.position = transform.position;
+            Invoke("DropBalls", secondsBetweenGreenBallsDrops);
+
+            var YellowBalls = Instantiate(YellowBallsPrefab);
+            YellowBalls.transform.position = transform.position;
+            Invoke("DropBalls", secondsBetweenYellowBallsDrops);
+
         }
+       
         // Update is called once per frame
         void Update()
         {

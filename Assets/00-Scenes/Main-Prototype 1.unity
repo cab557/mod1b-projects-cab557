@@ -673,7 +673,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: speed
-      value: -10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: ApplePrefab
@@ -684,16 +684,40 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6990433722791655239, guid: 821dbca25f73dce4baa1b8fabb58b182, type: 3}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
+      propertyPath: BlueBallsPrefab
+      value: 
+      objectReference: {fileID: 1486071309195128098, guid: ffae220bc1af91e43ba8561c8cb4a985, type: 3}
+    - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
+      propertyPath: GreenBallsPrefab
+      value: 
+      objectReference: {fileID: 1313203193821430739, guid: 63aaab4206ce1a541a444b0d4e58e1f1, type: 3}
+    - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: leftAndRightEdge
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
+      propertyPath: YellowBallsPrefab
+      value: 
+      objectReference: {fileID: 4515674267250312658, guid: e0ddc2b1bfe99894ab03b896ee7612ff, type: 3}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: chanceToChangeDirections
       value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: secondsBetweenBallsDrops
-      value: 0.2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
+      propertyPath: secondsBetweenBlueBallsDrops
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
+      propertyPath: secondsBetweenGreenBallsDrops
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
+      propertyPath: secondsBetweenYellowBallsDrops
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1271920551634095081, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: m_Name
