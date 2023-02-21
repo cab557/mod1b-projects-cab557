@@ -17,7 +17,7 @@ namespace Balls
 
         public float northAndSouthEdge = 10f;
 
-        public float chanceToChangeDirections;
+
 
         public float secondsBetweenBallsDrops;
         public float secondsBetweenBlueBallsDrops;
@@ -92,13 +92,9 @@ namespace Balls
 
                 }
             }
-            void FixedUpdate()
-            {
-                // Changing Direction Randomly is now t
-                if (Random.value < chanceToChangeDirections)
-                    speed *= -1; // Change direction
 
-            }
+
+
         }
     }
 }
