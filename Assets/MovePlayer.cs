@@ -21,6 +21,9 @@ public class MovePlayer : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
         rb.AddForce(movement * speed);
+
+        
+    }
     }
    
-    }
+    

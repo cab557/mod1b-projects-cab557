@@ -419,7 +419,6 @@ GameObject:
   - component: {fileID: 792234107}
   - component: {fileID: 792234106}
   - component: {fileID: 792234109}
-  - component: {fileID: 792234110}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -506,21 +505,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 889117066}
---- !u!114 &792234110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792234105}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55956db23375bb844ba73741f8b41719, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camTarget: {fileID: 1145223929}
-  pLerp: 0.02
-  rLerp: 0.01
 --- !u!1 &889117066
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,7 +725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1271920551634095087, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.5
+      value: 15.8
       objectReference: {fileID: 0}
     - target: {fileID: 1271920551634095087, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -777,11 +761,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1271920551780076821, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1271920551780076821, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.82
+      value: 6.7
       objectReference: {fileID: 0}
     - target: {fileID: 1271920551780076827, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1263,7 +1247,7 @@ Transform:
   m_GameObject: {fileID: 2034035909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 25, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.4, z: 0.1}
+  m_LocalScale: {x: 0.1, y: 0.3, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6921359200839814462}
