@@ -27,7 +27,7 @@ namespace Balls
         // Start is called before the first frame update
         void Start()
         {
-            Invoke("DropBalls", 2f);
+            Invoke("DropBalls", 10f);
         }
         void DropBalls()
         {
