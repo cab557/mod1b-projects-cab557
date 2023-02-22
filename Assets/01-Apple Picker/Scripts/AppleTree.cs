@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Balls
@@ -17,17 +18,24 @@ namespace Balls
 
         public float northAndSouthEdge = 10f;
 
-
+       
 
         public float secondsBetweenBallsDrops;
         public float secondsBetweenBlueBallsDrops;
         public float secondsBetweenYellowBallsDrops;
 
         public float secondsBetweenGreenBallsDrops;
+
+        [SerializeField]
+        private int ballCount = 0;
         // Start is called before the first frame update
         void Start()
         {
-            Invoke("DropBalls", 10f);
+            Invoke("DropBalls", 2f);
+
+            
+           
+
         }
         void DropBalls()
         {
@@ -47,6 +55,15 @@ namespace Balls
             YellowBalls.transform.position = transform.position;
             Invoke("DropBalls", secondsBetweenYellowBallsDrops);
 
+           
+            GameObject[] allBalls;
+            allBalls = GameObject.FindGameObjectsWithTag("Apple");
+            ballCount = allBalls.Count();
+
+            if  (ballCount > 1500) { 
+                 CancelInvoke("DropBalls");
+                    }
+               
         }
 
         // Update is called once per frame
@@ -59,7 +76,7 @@ namespace Balls
 
             transform.position = pos;
 
-
+           
 
 
             pos.z += speed * Time.deltaTime;
@@ -91,7 +108,9 @@ namespace Balls
                     speed = -Mathf.Abs(speed); // Move down
 
                 }
+            
             }
+
 
 
 

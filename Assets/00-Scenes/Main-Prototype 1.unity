@@ -634,7 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 501b6c722450b344daabedba7701f01a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 16
 --- !u!54 &889117072
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -676,6 +676,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
+      propertyPath: ballCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: ApplePrefab
       value: 
       objectReference: {fileID: 0}
@@ -709,19 +713,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: secondsBetweenBallsDrops
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: secondsBetweenBlueBallsDrops
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: secondsBetweenGreenBallsDrops
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: secondsBetweenYellowBallsDrops
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1271920551634095081, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: m_Name
