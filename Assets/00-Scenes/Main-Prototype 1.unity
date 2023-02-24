@@ -697,19 +697,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: secondsBetweenBallsDrops
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: secondsBetweenBlueBallsDrops
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: secondsBetweenGreenBallsDrops
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 366951853, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: secondsBetweenYellowBallsDrops
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1271920551634095081, guid: 9a42538ba9287194bab2b38c2104af1f, type: 3}
       propertyPath: m_Name
